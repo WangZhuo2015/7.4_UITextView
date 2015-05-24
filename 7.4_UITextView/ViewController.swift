@@ -13,6 +13,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var textView=UITextView(frame:CGRectMake(10, 100, 200, 100))
+        textView.layer.borderWidth=1
+        textView.layer.borderColor=UIColor.grayColor().CGColor
+        self.view.addSubview(textView)
+        textView.text="line1\nline2\n280034816@qq.com\n13151190802\nwww.baidu.com\n"
+        textView.editable=false
+        textView.dataDetectorTypes=UIDataDetectorTypes.All
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
